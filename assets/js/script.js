@@ -1,4 +1,3 @@
-/*=============== SHOW MENU ===============*/
 const navMenu = document.getElementById("nav-menu");
 const navToggle = document.getElementById("nav-toggle");
 const navClose = document.getElementById("nav-close");
@@ -18,7 +17,7 @@ if (navClose) {
   });
 }
 
-/*=============== REMOVE MENU MOBILE ===============*/
+/* REMOVE MENU MOBILE */
 const navLink = document.querySelectorAll(".nav__link");
 
 const linkAction = () => {
@@ -28,7 +27,7 @@ const linkAction = () => {
 };
 navLink.forEach((n) => n.addEventListener("click", linkAction));
 
-/*=============== ADD SHADOW HEADER ===============*/
+/* ADD SHADOW HEADER*/
 const shadowHeader = () => {
   const header = document.getElementById("header");
 
@@ -39,7 +38,7 @@ const shadowHeader = () => {
 
 window.addEventListener("scroll", shadowHeader);
 
-/*=============== GSAP ANIMATION ===============*/
+/* GSAP ANIMATION */
 gsap.from(".home__image-1", { duration: 2, y: -100 });
 
 let tl1 = gsap.timeline();
